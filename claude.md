@@ -32,7 +32,7 @@ GitHub Pages deploys directly from `main` (Settings → Pages → Deploy from a 
 
 ## Ambient monitor (separate repo)
 
-The ambient monitor (ESP32 firmware, the Google Sheet + Apps Script data store in `cloud/`, and the dashboard served by that repo's GitHub Pages at https://noelcav.github.io/Ambient-Monitor/) lives in `NoelCav/Ambient-Monitor`. It is shown at https://www.noelcaverly.com/monitor/ by a Cloudflare Worker on the route `www.noelcaverly.com/monitor*` (code in that repo, `cloud/cloudflare/`); `monitor/index.html` here is only a no-JS fallback that forwards to the GitHub Pages address if the Worker is missing. The homepage describes the project (Figure 6-1) and links `/monitor/` and the source; keep it that way. Don't add dashboard or data code to this repo.
+The ambient monitor (ESP32 firmware, the Google Sheet + Apps Script data store in `cloud/`, and the dashboard served by that repo's GitHub Pages) lives in `NoelCav/Ambient-Monitor`. Because this repo is the user site (`NoelCav.github.io`) with the custom domain, GitHub serves that project site at https://www.noelcaverly.com/Ambient-Monitor/. `monitor/index.html` here is a short-address redirect to it. Don't add an `Ambient-Monitor/` folder here (it would shadow the project site). The homepage describes the project (Figure 6-1) and links `/monitor/` and the source; keep it that way. Don't add dashboard or data code to this repo.
 
 ## Cloudflare
 
