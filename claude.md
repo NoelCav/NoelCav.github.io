@@ -32,7 +32,7 @@ GitHub Pages deploys directly from `main` (Settings → Pages → Deploy from a 
 
 ## Ambient monitor (separate repo)
 
-The ambient monitor — ESP32 firmware, web dashboard, Firestore rules, rollup script and workflow — lives in `NoelCav/Ambient-Monitor` (`cloud/` holds the off-device pieces). The project is on hold. Don't add dashboard, Firebase or rollup code here; the homepage only describes the project.
+The ambient monitor (ESP32 firmware, the Google Sheet + Apps Script data store in `cloud/`, and the dashboard served by that repo's GitHub Pages at https://noelcav.github.io/Ambient-Monitor/) lives in `NoelCav/Ambient-Monitor`. The homepage describes it (Figure 6-1) and links the live dashboard and the source; keep it that way. Don't add dashboard or data code to this repo.
 
 ## Cloudflare
 

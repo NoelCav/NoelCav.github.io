@@ -4,7 +4,7 @@ Personal site. Live at https://www.noelcaverly.com.
 
 GitHub Pages deploys straight from `main` (Settings → Pages → Deploy from a branch); there is no deploy workflow or build step. `mods/` is a template for future game-mod pages and is not linked from the homepage yet.
 
-The ambient monitor's dashboard, Firestore rules and rollup script used to live here; they moved to [NoelCav/Ambient-Monitor](https://github.com/NoelCav/Ambient-Monitor) under `cloud/`.
+The ambient monitor lives in [NoelCav/Ambient-Monitor](https://github.com/NoelCav/Ambient-Monitor); its dashboard is served from that repo at https://noelcav.github.io/Ambient-Monitor/ and linked from Figure 6-1.
 
 ## Cloudflare setup (manual)
 - [x] DNS A records for noelcaverly.com → GitHub Pages IPs (proxied):

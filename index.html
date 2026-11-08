@@ -170,7 +170,7 @@
       <h2 class="ds-h"><span>6</span>Typical Application</h2>
       <figure class="block-diagram">
         <svg viewBox="0 0 640 110" role="img" aria-labelledby="bd-title">
-          <title id="bd-title">Ambient monitor signal chain: sensors feed an ESP32, which writes to Firestore, which feeds a web dashboard.</title>
+          <title id="bd-title">Ambient monitor signal chain: sensors feed an ESP32, which uploads to a Google Sheet, which feeds a web dashboard.</title>
           <defs>
             <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
               <path class="bd-arrowhead" d="M0,0 L10,5 L0,10 z"/>
@@ -187,14 +187,15 @@
           </g>
           <g class="bd-label" text-anchor="middle">
             <text x="69" y="47">SENSORS</text><text x="237" y="47">ESP32</text>
-            <text x="405" y="47">FIRESTORE</text><text x="572" y="47">DASHBOARD</text>
+            <text x="405" y="47">GOOGLE SHEETS</text><text x="572" y="47">DASHBOARD</text>
           </g>
           <g class="bd-sub" text-anchor="middle">
             <text x="69" y="64">5 channels</text><text x="237" y="64">Wi-Fi, 10 min</text>
-            <text x="405" y="64">raw → 30 m → 1 h</text><text x="572" y="64">Plotly</text>
+            <text x="405" y="64">raw + hourly</text><text x="572" y="64">GitHub Pages</text>
           </g>
           <text class="bd-sub" x="4" y="104">Figure 6-1. Ambient monitor used to track dust in the author's apartment.</text>
         </svg>
+        <figcaption class="ds-note"><a href="https://noelcav.github.io/Ambient-Monitor/">Live dashboard</a> &middot; <a href="https://github.com/NoelCav/Ambient-Monitor">Source</a></figcaption>
       </figure>
     </section>
 
